@@ -2,7 +2,7 @@
 
 A simple color picker tool that allows you to sample colors from anywhere on your screen, built with React and TypeScript.
 
-![Eye Dropper Tool](https://raw.githubusercontent.com/your-username/eye-dropper/main/screenshots/preview.png)
+![Eye Dropper Tool](https://raw.githubusercontent.com/oleksiv/eyedropper/refs/heads/main/public/screenshot1.png)
 
 ## Features
 
