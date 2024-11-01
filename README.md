@@ -1,50 +1,98 @@
-# React + TypeScript + Vite
+# Eye Dropper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple color picker tool that allows you to sample colors from anywhere on your screen, built with React and TypeScript.
 
-Currently, two official plugins are available:
+![Eye Dropper Tool](https://raw.githubusercontent.com/your-username/eye-dropper/main/screenshots/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Pick colors from anywhere on your screen (including outside the browser)
+- Copy color codes with one click
+- Real-time color preview
+- Simple and intuitive interface
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide Icons
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (v16 or higher)
+- npm or yarn
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/eye-dropper.git
+cd eye-dropper
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn
 ```
+
+3. Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+## Usage
+
+1. Click the "Pick Color" button
+2. Your cursor will change to a color picker tool
+3. Click anywhere on your screen to sample a color
+4. Click the copy button to copy the color code to your clipboard
+
+Note: The EyeDropper API requires a secure context (HTTPS) in production.
+
+## Browser Support
+
+The EyeDropper API is supported in:
+- Chrome 95+
+- Edge 95+
+- Opera 81+
+- Chrome Android 95+
+
+Check [Can I use](https://caniuse.com/?search=EyeDropper) for the latest browser support information.
+
+## Project Structure
+
+```
+eye-dropper/
+├── src/
+│   ├── App.tsx
+│   ├── EyeDropper.tsx
+│   └── App.css
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [EyeDropper API](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper)
+- [Lucide Icons](https://lucide.dev/)
